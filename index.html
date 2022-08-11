@@ -2,13 +2,98 @@
 <html lang="eng">
 
     <head>
-       
-     
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
 
     </head>
-
     <body>
 
+        <main>
+
+            <form action="https://formspree.io/f/xvoljyyz" method="POST">
+
+                
+                <p> 
+                    <label for="full_name">Full Name</label>
+                    <input type="text" name="FullName" id="full_name" required minlength="10" placeholder="Full Name"
+                    tabindex="1">
+                        
+                </p>
+                   
         
+                <p> 
+                    <label for="email">E-mail Address</label>
+                    <input type="email" name="Email" id="email" required placeholder="Email">
+                </p>
+        
+                <p> 
+
+                    <label for="password">Password</label>
+                    <input type="password" name="Password" id="password" required placeholder="Password">
+                </p>
+        
+                <p> 
+                    <label for="phone_number">Phone Number</label>
+                    <input type="tel" name="PhoneNumber" id="phone_number" required placeholder="Phone Number">
+                </p>
+        
+                <p> 
+                    <label for="date_of_brith">Date Of Brith</label>
+                    <input type="date" name="DateOfBirth" id="date_of_brith" placeholder="DD/MM/YYYY">
+                </p>
+        
+                <p> 
+                    <label for="country">Your Country</label>
+                    <select name="Country" id="country">
+                        <option value="" disabled selected>Your Country</option>
+                        <option value="Palestine">Palestine</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Yemen">Yemen</option>
+                        <option value="Iran">Iran</option>
+                        <option value="Bahrain">Bahrain</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="Jordan">Jordan</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Lebanon">Lebanon</option>
+                        <option value="Libya">Libya</option>
+                        <option value="Mauritania">Mauritania</option>
+                        <option value="Morocco">Morocco</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="Somalia">Somalia</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Syria">Syria</option>
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="United Arab Emirates">United Arab Emirates</option>
+                    </select>
+                </p>      
+                
+                <p> 
+                    <label>Your Plan</label>
+                    <block>
+                        <label><input type="radio" id="free" name="PlanType" value="free" required>FREE</label>
+                        <label><input type="radio" id="pro"  name="PlanType" value="pro">PRO</label>
+                    </block>
+                   
+                </p>
+        
+                <p> 
+                    <input type="checkbox" id="checkbox" required>
+                    <label for="checkbox">&nbsp&nbspI agree of terms and conditions</label>
+                    
+                </p>
+        
+                <p class="submit_btn"> 
+                    <input type="submit" value="send">
+                </p>
+
+                </fieldset>
+        
+            </form>
+
+        </main>
+            
     </body>
 </html>
